@@ -1,0 +1,27 @@
+<Element 
+    id = "outerElement"
+    width = "40" 
+    height = "40"
+    gravity = "right">
+
+    <ChildElement 
+        color = "red"
+        width = "20"
+        height = "20">
+
+        <Element 
+        id = "innerElement"
+        width = "10"
+        height = "10" />
+
+        <Elemnt 
+        id = "innerElement2"
+        width = "10"
+        height = "10"
+        gravity = "center">
+
+        </Element>
+
+    </ChildElement>
+
+</Clement>
