@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Calculator Hindi Landscape</string>
+    <string name="big_textview">Big TextView Hindi Landscape</string>
+    <string name="hello_world">Hello World Hindi Landscape</string>
+    <string name="what_s_up">What\'s Up? Hindi Landscape</string>
+    <string name="bye">Bye! Hindi Landscape</string>
+</resources>
