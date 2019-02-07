@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (!input.startsWith("tel:")) {
                     input = "tel:" + input;
                 }
-                intent.setAction(Intent.ACTION_DIAL);
+                intent.setAction(Intent.ACTION_CALL);
                 intent.setData(Uri.parse(input));
                 break;
         }
