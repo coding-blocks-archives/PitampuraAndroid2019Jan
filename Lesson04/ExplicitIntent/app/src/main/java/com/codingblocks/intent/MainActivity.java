@@ -31,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent i = new Intent(getBaseContext(), NewActivity.class);
 
+                i.putExtra("COUNT", 4);
+                i.putExtra("NAME", "Harshit");
+                i.putExtra("ADDRESS", "Delhi");
+                i.putExtra("BATCH", "Android");
+                i.putExtra("ISCOOL", true);
 //
 //                String path = i.getComponent().getPackageName() + "/" +
 //                        i.getComponent().getPackageName() + "." +
