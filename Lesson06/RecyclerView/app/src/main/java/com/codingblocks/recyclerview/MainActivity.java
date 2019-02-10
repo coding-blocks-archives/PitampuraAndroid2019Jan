@@ -1,11 +1,11 @@
-package com.codingblocks.planets;
+package com.codingblocks.recyclerview;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
-import android.widget.Toast;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 
 import java.util.ArrayList;
 
@@ -16,68 +16,65 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        celestialObjects.add(new CelestialObjects("Earth", "149.6 million km", "Home", "https://santamariademocrats.info/wp-content/uploads/sites/52/2017/08/tierra1.jpg"));
-        celestialObjects.add(new CelestialObjects("Mercury", "57.91 million km", "Death", "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/whatsimporta.jpg"));
-        celestialObjects.add(new CelestialObjects("Venus", "108.2 million km", "Death", "https://www.honeysucklecreek.net/images/images_DSN/venusplanet_med.jpg"));
-        celestialObjects.add(new CelestialObjects("Mars", "149.6 million km", "Death", "https://s.hswstatic.com/gif/mars-a1.jpg"));
-        celestialObjects.add(new CelestialObjects("Asteroid Belt", "227.9 million km", "Death", "https://www.spaceanswers.com/wp-content/uploads/2012/09/Asteroid-belt.jpg"));
-        celestialObjects.add(new CelestialObjects("Earth", "149.6 million km", "Home", "https://santamariademocrats.info/wp-content/uploads/sites/52/2017/08/tierra1.jpg"));
-        celestialObjects.add(new CelestialObjects("Mercury", "57.91 million km", "Death", "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/whatsimporta.jpg"));
-        celestialObjects.add(new CelestialObjects("Venus", "108.2 million km", "Death", "https://www.honeysucklecreek.net/images/images_DSN/venusplanet_med.jpg"));
-        celestialObjects.add(new CelestialObjects("Mars", "149.6 million km", "Death", "https://s.hswstatic.com/gif/mars-a1.jpg"));
-        celestialObjects.add(new CelestialObjects("Asteroid Belt", "227.9 million km", "Death", "https://www.spaceanswers.com/wp-content/uploads/2012/09/Asteroid-belt.jpg"));
-        celestialObjects.add(new CelestialObjects("Earth", "149.6 million km", "Home", "https://santamariademocrats.info/wp-content/uploads/sites/52/2017/08/tierra1.jpg"));
-        celestialObjects.add(new CelestialObjects("Mercury", "57.91 million km", "Death", "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/whatsimporta.jpg"));
-        celestialObjects.add(new CelestialObjects("Venus", "108.2 million km", "Death", "https://www.honeysucklecreek.net/images/images_DSN/venusplanet_med.jpg"));
-        celestialObjects.add(new CelestialObjects("Mars", "149.6 million km", "Death", "https://s.hswstatic.com/gif/mars-a1.jpg"));
-        celestialObjects.add(new CelestialObjects("Asteroid Belt", "227.9 million km", "Death", "https://www.spaceanswers.com/wp-content/uploads/2012/09/Asteroid-belt.jpg"));
-        celestialObjects.add(new CelestialObjects("Earth", "149.6 million km", "Home", "https://santamariademocrats.info/wp-content/uploads/sites/52/2017/08/tierra1.jpg"));
-        celestialObjects.add(new CelestialObjects("Mercury", "57.91 million km", "Death", "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/whatsimporta.jpg"));
-        celestialObjects.add(new CelestialObjects("Venus", "108.2 million km", "Death", "https://www.honeysucklecreek.net/images/images_DSN/venusplanet_med.jpg"));
-        celestialObjects.add(new CelestialObjects("Mars", "149.6 million km", "Death", "https://s.hswstatic.com/gif/mars-a1.jpg"));
-        celestialObjects.add(new CelestialObjects("Asteroid Belt", "227.9 million km", "Death", "https://www.spaceanswers.com/wp-content/uploads/2012/09/Asteroid-belt.jpg"));
-        celestialObjects.add(new CelestialObjects("Earth", "149.6 million km", "Home", "https://santamariademocrats.info/wp-content/uploads/sites/52/2017/08/tierra1.jpg"));
-        celestialObjects.add(new CelestialObjects("Mercury", "57.91 million km", "Death", "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/whatsimporta.jpg"));
-        celestialObjects.add(new CelestialObjects("Venus", "108.2 million km", "Death", "https://www.honeysucklecreek.net/images/images_DSN/venusplanet_med.jpg"));
-        celestialObjects.add(new CelestialObjects("Mars", "149.6 million km", "Death", "https://s.hswstatic.com/gif/mars-a1.jpg"));
-        celestialObjects.add(new CelestialObjects("Asteroid Belt", "227.9 million km", "Death", "https://www.spaceanswers.com/wp-content/uploads/2012/09/Asteroid-belt.jpg"));
-        celestialObjects.add(new CelestialObjects("Earth", "149.6 million km", "Home", "https://santamariademocrats.info/wp-content/uploads/sites/52/2017/08/tierra1.jpg"));
-        celestialObjects.add(new CelestialObjects("Mercury", "57.91 million km", "Death", "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/whatsimporta.jpg"));
-        celestialObjects.add(new CelestialObjects("Venus", "108.2 million km", "Death", "https://www.honeysucklecreek.net/images/images_DSN/venusplanet_med.jpg"));
-        celestialObjects.add(new CelestialObjects("Mars", "149.6 million km", "Death", "https://s.hswstatic.com/gif/mars-a1.jpg"));
-        celestialObjects.add(new CelestialObjects("Asteroid Belt", "227.9 million km", "Death", "https://www.spaceanswers.com/wp-content/uploads/2012/09/Asteroid-belt.jpg"));
-        celestialObjects.add(new CelestialObjects("Earth", "149.6 million km", "Home", "https://santamariademocrats.info/wp-content/uploads/sites/52/2017/08/tierra1.jpg"));
-        celestialObjects.add(new CelestialObjects("Mercury", "57.91 million km", "Death", "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/whatsimporta.jpg"));
-        celestialObjects.add(new CelestialObjects("Venus", "108.2 million km", "Death", "https://www.honeysucklecreek.net/images/images_DSN/venusplanet_med.jpg"));
-        celestialObjects.add(new CelestialObjects("Mars", "149.6 million km", "Death", "https://s.hswstatic.com/gif/mars-a1.jpg"));
-        celestialObjects.add(new CelestialObjects("Asteroid Belt", "227.9 million km", "Death", "https://www.spaceanswers.com/wp-content/uploads/2012/09/Asteroid-belt.jpg"));
-        celestialObjects.add(new CelestialObjects("Mercury", "57.91 million km", "Death", "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/whatsimporta.jpg"));
-        celestialObjects.add(new CelestialObjects("Venus", "108.2 million km", "Death", "https://www.honeysucklecreek.net/images/images_DSN/venusplanet_med.jpg"));
-        celestialObjects.add(new CelestialObjects("Mars", "149.6 million km", "Death", "https://s.hswstatic.com/gif/mars-a1.jpg"));
-        celestialObjects.add(new CelestialObjects("Asteroid Belt", "227.9 million km", "Death", "https://www.spaceanswers.com/wp-content/uploads/2012/09/Asteroid-belt.jpg"));
-        celestialObjects.add(new CelestialObjects("Earth", "149.6 million km", "Home", "https://santamariademocrats.info/wp-content/uploads/sites/52/2017/08/tierra1.jpg"));
-        celestialObjects.add(new CelestialObjects("Mercury", "57.91 million km", "Death", "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/whatsimporta.jpg"));
-        celestialObjects.add(new CelestialObjects("Venus", "108.2 million km", "Death", "https://www.honeysucklecreek.net/images/images_DSN/venusplanet_med.jpg"));
-        celestialObjects.add(new CelestialObjects("Mars", "149.6 million km", "Death", "https://s.hswstatic.com/gif/mars-a1.jpg"));
-        celestialObjects.add(new CelestialObjects("Asteroid Belt", "227.9 million km", "Death", "https://www.spaceanswers.com/wp-content/uploads/2012/09/Asteroid-belt.jpg"));
-
         setContentView(R.layout.activity_main);
+        celestialObjects.add(new CelestialObjects("Earth", "149.6 million km", "Home", "https://santamariademocrats.info/wp-content/uploads/sites/52/2017/08/tierra1.jpg"));
+        celestialObjects.add(new CelestialObjects("Mercury", "57.91 million km", "Death", "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/whatsimporta.jpg"));
+        celestialObjects.add(new CelestialObjects("Venus", "108.2 million km", "Death", "https://www.honeysucklecreek.net/images/images_DSN/venusplanet_med.jpg"));
+        celestialObjects.add(new CelestialObjects("Mars", "149.6 million km", "Death", "https://s.hswstatic.com/gif/mars-a1.jpg"));
+        celestialObjects.add(new CelestialObjects("Asteroid Belt", "227.9 million km", "Death", "https://www.spaceanswers.com/wp-content/uploads/2012/09/Asteroid-belt.jpg"));
+        celestialObjects.add(new CelestialObjects("Earth", "149.6 million km", "Home", "https://santamariademocrats.info/wp-content/uploads/sites/52/2017/08/tierra1.jpg"));
+        celestialObjects.add(new CelestialObjects("Mercury", "57.91 million km", "Death", "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/whatsimporta.jpg"));
+        celestialObjects.add(new CelestialObjects("Venus", "108.2 million km", "Death", "https://www.honeysucklecreek.net/images/images_DSN/venusplanet_med.jpg"));
+        celestialObjects.add(new CelestialObjects("Mars", "149.6 million km", "Death", "https://s.hswstatic.com/gif/mars-a1.jpg"));
+        celestialObjects.add(new CelestialObjects("Asteroid Belt", "227.9 million km", "Death", "https://www.spaceanswers.com/wp-content/uploads/2012/09/Asteroid-belt.jpg"));
+        celestialObjects.add(new CelestialObjects("Earth", "149.6 million km", "Home", "https://santamariademocrats.info/wp-content/uploads/sites/52/2017/08/tierra1.jpg"));
+        celestialObjects.add(new CelestialObjects("Mercury", "57.91 million km", "Death", "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/whatsimporta.jpg"));
+        celestialObjects.add(new CelestialObjects("Venus", "108.2 million km", "Death", "https://www.honeysucklecreek.net/images/images_DSN/venusplanet_med.jpg"));
+        celestialObjects.add(new CelestialObjects("Mars", "149.6 million km", "Death", "https://s.hswstatic.com/gif/mars-a1.jpg"));
+        celestialObjects.add(new CelestialObjects("Asteroid Belt", "227.9 million km", "Death", "https://www.spaceanswers.com/wp-content/uploads/2012/09/Asteroid-belt.jpg"));
+        celestialObjects.add(new CelestialObjects("Earth", "149.6 million km", "Home", "https://santamariademocrats.info/wp-content/uploads/sites/52/2017/08/tierra1.jpg"));
+        celestialObjects.add(new CelestialObjects("Mercury", "57.91 million km", "Death", "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/whatsimporta.jpg"));
+        celestialObjects.add(new CelestialObjects("Venus", "108.2 million km", "Death", "https://www.honeysucklecreek.net/images/images_DSN/venusplanet_med.jpg"));
+        celestialObjects.add(new CelestialObjects("Mars", "149.6 million km", "Death", "https://s.hswstatic.com/gif/mars-a1.jpg"));
+        celestialObjects.add(new CelestialObjects("Asteroid Belt", "227.9 million km", "Death", "https://www.spaceanswers.com/wp-content/uploads/2012/09/Asteroid-belt.jpg"));
+        celestialObjects.add(new CelestialObjects("Earth", "149.6 million km", "Home", "https://santamariademocrats.info/wp-content/uploads/sites/52/2017/08/tierra1.jpg"));
+        celestialObjects.add(new CelestialObjects("Mercury", "57.91 million km", "Death", "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/whatsimporta.jpg"));
+        celestialObjects.add(new CelestialObjects("Venus", "108.2 million km", "Death", "https://www.honeysucklecreek.net/images/images_DSN/venusplanet_med.jpg"));
+        celestialObjects.add(new CelestialObjects("Mars", "149.6 million km", "Death", "https://s.hswstatic.com/gif/mars-a1.jpg"));
+        celestialObjects.add(new CelestialObjects("Asteroid Belt", "227.9 million km", "Death", "https://www.spaceanswers.com/wp-content/uploads/2012/09/Asteroid-belt.jpg"));
+        celestialObjects.add(new CelestialObjects("Earth", "149.6 million km", "Home", "https://santamariademocrats.info/wp-content/uploads/sites/52/2017/08/tierra1.jpg"));
+        celestialObjects.add(new CelestialObjects("Mercury", "57.91 million km", "Death", "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/whatsimporta.jpg"));
+        celestialObjects.add(new CelestialObjects("Venus", "108.2 million km", "Death", "https://www.honeysucklecreek.net/images/images_DSN/venusplanet_med.jpg"));
+        celestialObjects.add(new CelestialObjects("Mars", "149.6 million km", "Death", "https://s.hswstatic.com/gif/mars-a1.jpg"));
+        celestialObjects.add(new CelestialObjects("Asteroid Belt", "227.9 million km", "Death", "https://www.spaceanswers.com/wp-content/uploads/2012/09/Asteroid-belt.jpg"));
+        celestialObjects.add(new CelestialObjects("Earth", "149.6 million km", "Home", "https://santamariademocrats.info/wp-content/uploads/sites/52/2017/08/tierra1.jpg"));
+        celestialObjects.add(new CelestialObjects("Mercury", "57.91 million km", "Death", "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/whatsimporta.jpg"));
+        celestialObjects.add(new CelestialObjects("Venus", "108.2 million km", "Death", "https://www.honeysucklecreek.net/images/images_DSN/venusplanet_med.jpg"));
+        celestialObjects.add(new CelestialObjects("Mars", "149.6 million km", "Death", "https://s.hswstatic.com/gif/mars-a1.jpg"));
+        celestialObjects.add(new CelestialObjects("Asteroid Belt", "227.9 million km", "Death", "https://www.spaceanswers.com/wp-content/uploads/2012/09/Asteroid-belt.jpg"));
+        celestialObjects.add(new CelestialObjects("Mercury", "57.91 million km", "Death", "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/whatsimporta.jpg"));
+        celestialObjects.add(new CelestialObjects("Venus", "108.2 million km", "Death", "https://www.honeysucklecreek.net/images/images_DSN/venusplanet_med.jpg"));
+        celestialObjects.add(new CelestialObjects("Mars", "149.6 million km", "Death", "https://s.hswstatic.com/gif/mars-a1.jpg"));
+        celestialObjects.add(new CelestialObjects("Asteroid Belt", "227.9 million km", "Death", "https://www.spaceanswers.com/wp-content/uploads/2012/09/Asteroid-belt.jpg"));
+        celestialObjects.add(new CelestialObjects("Earth", "149.6 million km", "Home", "https://santamariademocrats.info/wp-content/uploads/sites/52/2017/08/tierra1.jpg"));
+        celestialObjects.add(new CelestialObjects("Mercury", "57.91 million km", "Death", "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/whatsimporta.jpg"));
+        celestialObjects.add(new CelestialObjects("Venus", "108.2 million km", "Death", "https://www.honeysucklecreek.net/images/images_DSN/venusplanet_med.jpg"));
+        celestialObjects.add(new CelestialObjects("Mars", "149.6 million km", "Death", "https://s.hswstatic.com/gif/mars-a1.jpg"));
+        celestialObjects.add(new CelestialObjects("Asteroid Belt", "227.9 million km", "Death", "https://www.spaceanswers.com/wp-content/uploads/2012/09/Asteroid-belt.jpg"));
 
-        PlanetAdapter planetAdapter = new PlanetAdapter(celestialObjects, this);
+        RecyclerView recyclerView = findViewById(R.id.rvPlanets);
 
-        ListView listView = findViewById(R.id.listView);
+        PlanetAdapter planetAdapter = new PlanetAdapter(celestialObjects);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-                Toast.makeText(MainActivity.this, celestialObjects.get(position).getName(), Toast.LENGTH_SHORT).show();
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
-            }
-        });
+//        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
 
-        listView.setAdapter(planetAdapter);
+//        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
+
+        recyclerView.setAdapter(planetAdapter);
 
     }
 }

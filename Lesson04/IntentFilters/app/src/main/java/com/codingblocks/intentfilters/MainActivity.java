@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
                 i.setData(Uri.parse(url));
 
 //                i.putExtra("EXPLICIT_INTENT_URL", url);
-
                 startActivity(i);
 
             }

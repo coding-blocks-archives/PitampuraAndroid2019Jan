@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
@@ -87,9 +88,10 @@ public class PlanetAdapter extends BaseAdapter {
 
         TextView name, desc, distance;
         ImageView image;
+        View rowView;
 
         public ViewHolder(View view) {
-
+            rowView = view;
             this.name = view.findViewById(R.id.tvName);
             this.desc = view.findViewById(R.id.tvDesc);
             this.distance = view.findViewById(R.id.tvDistance);
