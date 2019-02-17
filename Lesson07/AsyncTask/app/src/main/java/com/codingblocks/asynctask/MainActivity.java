@@ -22,12 +22,14 @@ public class MainActivity extends AppCompatActivity {
         btnStop = findViewById(R.id.btnStop);
         textView = findViewById(R.id.tvContent);
 
+        final CountTask countTask = new CountTask();
+
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                CountTask countTask = new CountTask();
-                countTask.execute(1000000L);
+                if (countTask.getStatus() == AsyncTask.Status.FINISHED)
+                    countTask.execute(1000000L);
 
                 //blocks your main thread from doing any additional work!
 //                for (long i = 0; i < 100000000L; i++) {

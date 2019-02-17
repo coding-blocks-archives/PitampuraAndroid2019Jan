@@ -2,6 +2,14 @@ package com.codingblocks.kotlin;
 
 public class Demo {
 
+    Note note;
+
+    public Demo(String title, String desc, String time) {
+
+        note = new Note(title, desc, time);
+
+    }
+
     public static void main(String[] args) {
 
         Note note = new Note("ssd", "dfjds", "sfge");

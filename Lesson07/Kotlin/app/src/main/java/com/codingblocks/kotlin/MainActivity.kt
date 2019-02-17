@@ -2,6 +2,7 @@ package com.codingblocks.kotlin
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v4.content.ContextCompat
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.concurrent.thread
@@ -34,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
         tvOne.setOnClickListener {
 
-            tvTwo.setTextColor(getColor(R.color.colorAccent))
+            tvTwo.setTextColor(ContextCompat.getColor(this, R.color.colorAccent))
 
         }
 
@@ -83,6 +84,5 @@ class MainActivity : AppCompatActivity() {
             Toast.LENGTH_SHORT
         ).show()
     }
-
 
 }

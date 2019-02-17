@@ -11,5 +11,8 @@ fun showLongToast(context: Context, string: String) = Toast.makeText(context, st
 
 
 fun main() {
+    val mango = Mango("Sweet", "2982368724", "Delhi")
+
+    val place = mango.origin
 
 }
