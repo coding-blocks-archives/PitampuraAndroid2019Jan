@@ -1,4 +1,4 @@
-
+package com.codingblocks.retrofitgsonapp
 
 data class User(
     val address: Address,
@@ -11,6 +11,11 @@ data class User(
     val website: String
 )
 
+data class Company(
+    val bs: String,
+    val catchPhrase: String,
+    val name: String
+)
 
 data class Address(
     val city: String,
@@ -19,14 +24,6 @@ data class Address(
     val suite: String,
     val zipcode: String
 )
-
-
-data class Company(
-    val bs: String,
-    val catchPhrase: String,
-    val name: String
-)
-
 
 data class Geo(
     val lat: String,
