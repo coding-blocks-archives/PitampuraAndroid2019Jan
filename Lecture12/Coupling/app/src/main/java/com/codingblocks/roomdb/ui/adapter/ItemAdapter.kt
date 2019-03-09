@@ -31,9 +31,6 @@ class ItemAdapter(
     override fun onBindViewHolder(noteHolder: NoteHolder, position: Int) {
         val currentNote = notes[position]
 
-//        noteHolder.itemView.tvTitle.text = currentNote.title
-//        noteHolder.itemView.tvSubTitle.text = currentNote.subTitle
-
         noteHolder.itemView.setOnLongClickListener {
             handler.handleLongClick(currentNote)
             //If returned false, both onClick and onLongClick will be called

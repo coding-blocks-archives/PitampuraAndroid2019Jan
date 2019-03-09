@@ -3,6 +3,7 @@ package com.codingblocks.gotapi
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.codingblocks.gotapi.model.GOTApiResponse
+import com.codingblocks.gotapi.model.PlaceHolerPost
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_main.*
 import okhttp3.*
@@ -44,7 +45,9 @@ class MainActivity : AppCompatActivity() {
 
                 val gotApiResponse: GOTApiResponse = gson.fromJson(result, GOTApiResponse::class.java)
 
-
+                //https://jsonplaceholder.typicode.com/posts
+                val jsonPlaceHolderPosts: Array<PlaceHolerPost> =
+                    gson.fromJson(result, Array<PlaceHolerPost>::class.java)
             }
 
         })

@@ -10,13 +10,12 @@ import com.codingblocks.roomdb.ui.adapter.ItemAdapter
 class AdminActivity : AppCompatActivity(), ClickHandlers {
 
     override fun handleClick(note: Note) {
-
     }
 
     override fun handleLongClick(note: Note) {
     }
 
-    val notes = arrayListOf<Note>()
+    private val notes = arrayListOf<Note>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
