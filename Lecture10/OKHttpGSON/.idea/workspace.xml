@@ -11,7 +11,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17170604-7d96-4ed8-9f0c-bef9241aa25d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codingblocks/okhttp/Models.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/java/com/codingblocks/roomdb/db/NoteDatabase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/java/com/codingblocks/roomdb/db/NotesDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/java/com/codingblocks/roomdb/db/UserDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/java/com/codingblocks/roomdb/models/Note.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/java/com/codingblocks/roomdb/ui/activity/EditActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/java/com/codingblocks/roomdb/ui/activity/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/java/com/codingblocks/roomdb/ui/adapter/NoteAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/res/drawable/ic_check.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/res/layout/activity_edit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/java/com/codingblocks/roomdb/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/java/com/codingblocks/roomdb/Note.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/java/com/codingblocks/roomdb/NoteAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/java/com/codingblocks/roomdb/NoteDatabase.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/java/com/codingblocks/roomdb/NotesDao.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/java/com/codingblocks/roomdb/UserDao.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/res/drawable-v24/ic_add.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lecture11/RoomDB/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,49 +54,50 @@
     <session id="1140038615">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gradle" value="1" />
-          <entry key="java" value="8" />
-          <entry key="kt" value="2" />
-          <entry key="xml" value="2" />
+          <entry key="gradle" value="2" />
+          <entry key="java" value="14" />
+          <entry key="kt" value="4" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="8" />
-          <entry key="Kotlin" value="2" />
-          <entry key="XML" value="2" />
+          <entry key="Groovy" value="2" />
+          <entry key="JAVA" value="14" />
+          <entry key="Kotlin" value="4" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="4" />
-          <entry key="kt" value="1547" />
+          <entry key="kt" value="1553" />
           <entry key="xml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="4" />
-          <entry key="Kotlin" value="1547" />
+          <entry key="Kotlin" value="1553" />
           <entry key="XML" value="17" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
+            <state relative-caret-position="578">
               <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="35" selection-end-column="52" />
             </state>
           </provider>
@@ -86,11 +106,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/codingblocks/okhttp/MainActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-432">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-end-line="17" />
-              <folding>
-                <element signature="e#33#252#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="232">
+              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -98,7 +115,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.13.1/e3023aa394b9dfada43060b8b5a31e8d3c508b27/okhttp-3.13.1-sources.jar!/okhttp3/Response.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-557">
+            <state relative-caret-position="102">
               <caret line="37" column="61" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="61" />
               <folding>
                 <element signature="e#6299#6300#0" expanded="true" />
@@ -111,7 +128,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.13.1/e3023aa394b9dfada43060b8b5a31e8d3c508b27/okhttp-3.13.1-sources.jar!/okhttp3/ResponseBody.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="1292">
               <caret line="102" column="34" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="34" />
             </state>
           </provider>
@@ -120,7 +137,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/codingblocks/okhttp/Models.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
+            <state relative-caret-position="527">
               <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
               <folding>
                 <element signature="e#33#124#0" expanded="true" />
@@ -141,7 +158,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.5/c5b4c491aecb72e7c32a78da0b5c6b9cda8dee0f/gson-2.8.5-sources.jar!/com/google/gson/Gson.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
+            <state relative-caret-position="1972">
               <caret line="170" column="77" selection-start-line="170" selection-start-column="77" selection-end-line="170" selection-end-column="77" />
             </state>
           </provider>
@@ -150,7 +167,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.5/c5b4c491aecb72e7c32a78da0b5c6b9cda8dee0f/gson-2.8.5-sources.jar!/com/google/gson/annotations/Expose.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
+            <state relative-caret-position="765">
               <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
             </state>
           </provider>
@@ -2566,10 +2583,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="777" />
+    <option name="width" value="1024" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -2716,29 +2733,29 @@
     <frame x="0" y="23" width="1024" height="745" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" weight="0.3299389" />
-      <window_info id="Structure" side_tool="true" />
-      <window_info id="Build Variants" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Run" />
-      <window_info anchor="bottom" id="Logcat" weight="0.7901991" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TODO" />
-      <window_info anchor="bottom" id="Android Profiler" />
-      <window_info anchor="bottom" id="Debug" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32924962" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" weight="0.32924962" />
-      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Preview" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.3299389" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="bottom" id="Run" order="0" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.7901991" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32924962" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Build" order="7" visible="true" weight="0.32924962" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Preview" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -2746,12 +2763,12 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.13.1/e3023aa394b9dfada43060b8b5a31e8d3c508b27/okhttp-3.13.1-sources.jar!/okhttp3/Call.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -2760,18 +2777,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.13.1/e3023aa394b9dfada43060b8b5a31e8d3c508b27/okhttp-3.13.1-sources.jar!/okhttp3/Callback.java">
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="16" />
+        <state relative-caret-position="578">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="35" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.13.1/e3023aa394b9dfada43060b8b5a31e8d3c508b27/okhttp-3.13.1-sources.jar!/okhttp3/Response.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        <state relative-caret-position="102">
+          <caret line="37" column="61" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="61" />
+          <folding>
+            <element signature="e#6299#6300#0" expanded="true" />
+            <element signature="e#6320#6321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.13.1/e3023aa394b9dfada43060b8b5a31e8d3c508b27/okhttp-3.13.1-sources.jar!/okhttp3/ResponseBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="102" column="34" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/codingblocks/okhttp/Models.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <folding>
+            <element signature="e#33#124#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2784,60 +2821,37 @@
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.5/c5b4c491aecb72e7c32a78da0b5c6b9cda8dee0f/gson-2.8.5-sources.jar!/com/google/gson/Gson.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
+        <state relative-caret-position="1972">
           <caret line="170" column="77" selection-start-line="170" selection-start-column="77" selection-end-line="170" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.5/c5b4c491aecb72e7c32a78da0b5c6b9cda8dee0f/gson-2.8.5-sources.jar!/com/google/gson/annotations/Expose.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
+        <state relative-caret-position="765">
           <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/codingblocks/okhttp/Models.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-          <folding>
-            <element signature="e#33#124#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.13.1/e3023aa394b9dfada43060b8b5a31e8d3c508b27/okhttp-3.13.1-sources.jar!/okhttp3/ResponseBody.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.13.1/e3023aa394b9dfada43060b8b5a31e8d3c508b27/okhttp-3.13.1-sources.jar!/okhttp3/Callback.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="102" column="34" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.13.1/e3023aa394b9dfada43060b8b5a31e8d3c508b27/okhttp-3.13.1-sources.jar!/okhttp3/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-557">
-          <caret line="37" column="61" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="61" />
-          <folding>
-            <element signature="e#6299#6300#0" expanded="true" />
-            <element signature="e#6320#6321#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="35" selection-end-column="52" />
+        <state relative-caret-position="85">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/codingblocks/okhttp/MainActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-432">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-end-line="17" />
-          <folding>
-            <element signature="e#33#252#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="232">
+          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
         </state>
       </provider>
     </entry>
