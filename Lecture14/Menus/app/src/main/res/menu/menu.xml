@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/home"
+            android:title="home"
+            android:icon="@drawable/ic_android_black_24dp"
+            app:showAsAction="ifRoom"
+            android:orderInCategory="100"/>
+    <item
+            android:id="@+id/about"
+            android:title="about"
+            android:icon="@drawable/ic_launcher_background"
+            app:showAsAction="never"
+            android:orderInCategory="200"/>
+    <item
+            android:id="@+id/profile"
+            android:title="profile"
+            android:icon="@drawable/ic_launcher_background"
+            android:orderInCategory="300"/>
+    <item
+            android:id="@+id/settings"
+            android:title="settings"
+            android:icon="@drawable/ic_launcher_background"
+            android:orderInCategory="400"/>
+
+    <item android:title=" SubMenu"
+          android:orderInCategory="500">
+
+        <menu>
+
+            <item
+                android:title="sub menub 1"
+                android:id="@+id/sub1"
+                android:orderInCategory="600"/>
+
+            <item
+                    android:title="sub menub 2"
+                    android:id="@+id/sub2"
+                    android:orderInCategory="700"/>
+
+
+        </menu>
+
+    </item>
+
+</menu>
