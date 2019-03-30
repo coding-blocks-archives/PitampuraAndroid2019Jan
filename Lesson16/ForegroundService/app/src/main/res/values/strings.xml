@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ForegroundService</string>
+    <string name="notification_title">Notification Title</string>
+    <string name="notification_message">Notification Message</string>
+</resources>
