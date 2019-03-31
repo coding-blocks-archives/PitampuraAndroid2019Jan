@@ -51,6 +51,16 @@ class MainActivity : AppCompatActivity() {
 
             override fun onResponse(call: Call, response: okhttp3.Response) {
 
+//                val pokemon = gson.fromJson(response.body.string(), Pokemon::class.java)
+//
+//                db.save(pokemon)
+//
+//                val pokemon = db.getPokemon("pikachu")
+//
+//                runOnUIThread{
+
+//                }
+
                 val responseBody: ResponseBody? = response.body()
 
                 val result = responseBody?.string()
@@ -61,8 +71,6 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
-
-
 
 //        val response = client.newCall(request).execute()
 //

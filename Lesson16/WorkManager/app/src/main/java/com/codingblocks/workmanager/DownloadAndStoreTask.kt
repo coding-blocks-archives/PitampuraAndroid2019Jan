@@ -16,6 +16,10 @@ class DownloadAndStoreTask(context: Context, workerParams: WorkerParameters) :
 
         //I can go ahead and save the response into a db
 
+//        val response = okhttpClient.newCall(request).execute()
+//
+//        val responseString = response.body().string()
+
         return Result.success()
     }
 
