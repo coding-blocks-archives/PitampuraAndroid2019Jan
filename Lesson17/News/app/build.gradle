@@ -22,10 +22,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'com.squareup.okhttp3:okhttp:3.14.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
@@ -35,9 +39,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     def room_version = "1.1.1"
-
     implementation "android.arch.persistence.room:runtime:$room_version"
-    kapt "android.arch.persistence.room:compiler:$room_version" // For Kotlin use kapt instead of annotationProcessor
+    kapt "android.arch.persistence.room:compiler:$room_version"
+    // For Kotlin use kapt instead of annotationProcessor
     def work_version = "1.0.0"
     // Kotlin + coroutines
     implementation "android.arch.work:work-runtime-ktx:$work_version"
