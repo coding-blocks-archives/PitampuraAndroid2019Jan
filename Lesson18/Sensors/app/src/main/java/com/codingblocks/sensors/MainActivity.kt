@@ -2,9 +2,9 @@ package com.codingblocks.sensors
 
 import android.accounts.AccountManager
 import android.content.Context
+import android.graphics.Color
 import android.hardware.Sensor
-import android.hardware.Sensor.TYPE_ACCELEROMETER
-import android.hardware.Sensor.TYPE_PROXIMITY
+import android.hardware.Sensor.*
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
@@ -14,6 +14,7 @@ import android.os.UserManager
 import android.support.v4.content.ContextCompat.getSystemService
 import android.util.Log
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), SensorEventListener {
 
@@ -45,13 +46,12 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
     override fun onStart() {
         super.onStart()
         val sm = getSystemService(Context.SENSOR_SERVICE) as SensorManager
-//
-        val accelSensor = sm.getDefaultSensor(TYPE_ACCELEROMETER)
+
+        val accelSensor = sm.getDefaultSensor(TYPE_GRAVITY)
 
         val proximitySensor = sm.getDefaultSensor(TYPE_PROXIMITY)
-
         sm.registerListener(this, accelSensor, SensorManager.SENSOR_DELAY_UI)
-//        sm.registerListener(this, proximitySensor, SensorManager.SENSOR_DELAY_UI)
+        sm.registerListener(this, proximitySensor, SensorManager.SENSOR_DELAY_UI)
     }
 
 
@@ -63,10 +63,18 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
     override fun onSensorChanged(event: SensorEvent?) {
         event?.let {
             when {
-                it.sensor.type == Sensor.TYPE_ACCELEROMETER -> {
+                it.sensor.type == Sensor.TYPE_GRAVITY -> {
                     Log.e("TAG", "acceleration in x : " + it.values[0])
                     Log.e("TAG", "acceleration in y : " + it.values[1])
                     Log.e("TAG", "acceleration in z : " + it.values[2])
+
+                    val red = 0
+                    val green = 0
+                    val blue =  0
+
+                    val color = Color.rgb(red,green,blue)
+
+                    parentLayout.setBackgroundColor(color)
                 }
                 it.sensor.type == Sensor.TYPE_PROXIMITY -> {
                     Log.e("TAG", "Distance from the sensor : " + it.values[0])
