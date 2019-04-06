@@ -68,12 +68,11 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
                     Log.e("TAG", "acceleration in y : " + it.values[1])
                     Log.e("TAG", "acceleration in z : " + it.values[2])
 
-                    val red = 0
-                    val green = 0
-                    val blue =  0
+                    val red = (Math.abs(it.values[0]) * 255 / SensorManager.GRAVITY_EARTH).toInt()
+                    val green = (Math.abs(it.values[1]) * 255 / SensorManager.GRAVITY_EARTH).toInt()
+                    val blue = (Math.abs(it.values[2]) * 255 / SensorManager.GRAVITY_EARTH).toInt()
 
-                    val color = Color.rgb(red,green,blue)
-
+                    val color = Color.rgb(red, green, blue)
                     parentLayout.setBackgroundColor(color)
                 }
                 it.sensor.type == Sensor.TYPE_PROXIMITY -> {
