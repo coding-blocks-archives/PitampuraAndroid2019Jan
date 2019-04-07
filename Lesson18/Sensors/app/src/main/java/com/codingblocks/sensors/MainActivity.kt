@@ -18,14 +18,11 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), SensorEventListener {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
 //        val listOfSensors = sm.getSensorList(Sensor.TYPE_ALL)
-
 //        listOfSensors.forEach {
 //            Log.e("TAG", "--------------")
 //            Log.e("TAG", "Name : " + it.name)
