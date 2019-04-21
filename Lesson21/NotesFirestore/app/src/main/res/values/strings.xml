@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NotesFirestore</string>
+    <string name="enter_the_title_here">Enter the title here</string>
+    <string name="enter_the_description_here">Enter the description here</string>
+</resources>
