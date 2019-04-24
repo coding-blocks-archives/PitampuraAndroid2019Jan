@@ -97,7 +97,6 @@ class NewsFragment : Fragment() {
             newsAdapter.notifyDataSetChanged()
         }
 
-
     }
 
 }
